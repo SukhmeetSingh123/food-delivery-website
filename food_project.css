@@ -1,0 +1,201 @@
+/* css reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* css variable */
+:root{
+    --navbar-height:59px;
+}
+/* ............NAVBAR................................. */
+#logo{
+    padding: 10px;
+    margin: 10px;
+}
+#logo img{
+    width: 55px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    top: 0px;
+    position: sticky ;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#navbar ul {
+    display: flex;
+}
+#navbar ul li {
+    font-size: 1.0rem;
+    list-style: none;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    margin: 2px 22px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+}
+/* .................................................. */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 343px; 
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url('food\ background1.jpg') no-repeat center center/cover;
+    height: 369px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.88   ;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Baloo Bhaijaan 2', cursive;;
+}
+#home p{
+    color: white;
+    font-size: 1.0rem;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+/* .................................................................. */
+#services{
+    display: flex;
+    margin: 10px;
+}
+#services .box{
+    border: 2px solid #6a6363;
+    font-family: 'Baloo Bhaijaan 2', cursive;;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 23px;
+    background-color: #ffebeb;
+}
+#services .box img{
+    height: 116px;
+    display: block;
+    margin: auto;
+}
+/* ..................................................................... */
+#client-section{
+    position: relative;
+    z-index: -1;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url('food\ background2.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 97%;
+    z-index: -1;
+    opacity: 0.7;
+    margin: 10px;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{   
+    height: 102px;
+    margin: 16px;
+    padding: 16px;
+    position: relative;
+    z-index: -1;
+}
+/* .......................................................... */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('rename.jpg') no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: bottom 34px;;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1rem;
+    font-family: 'Baloo Bhaijaan 2', cursive;;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1rem;
+}
+/* ......................................................... */
+footer{
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+}
+/* ......................................................... */
+/* utility clases */
+.h-primary{
+    font-size: 2.2rem;
+    padding: 12px;
+    margin: 10px;
+    font-family: 'Baloo Bhaijaan 2', cursive;;
+    position: relative;
+    z-index: -1;
+}
+.h-secondary{
+    font-size: 2.0rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    margin: 20px;
+    border: 1px solid white;
+    background-color: #221d1d33;
+    color: #fff7e8;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.center{
+    text-align: center;
+}
